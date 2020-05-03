@@ -2,8 +2,6 @@
     module.exports = n(e)
 }(window, function (o, e) {
     if (!o.jWeixin) {
-        console.log('o', o);
-        console.log('e', e);
         var n;
         var c = {
             config: 'preVerifyJSAPI',
