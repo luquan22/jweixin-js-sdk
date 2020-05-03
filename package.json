@@ -1,0 +1,22 @@
+{
+  "name": "jweixin-mios",
+  "version": "1.6.0",
+  "description": "基于官方1.6.0制作",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luquan22/jweixin-js-sdk.git"
+  },
+  "keywords": [
+    "jweixin"
+  ],
+  "author": "luquan基于微信官方jdk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luquan22/jweixin-js-sdk/issues"
+  },
+  "homepage": "https://github.com/luquan22/jweixin-js-sdk#readme"
+}

@@ -2,6 +2,8 @@
     module.exports = n(e)
 }(window, function (o, e) {
     if (!o.jWeixin) {
+        console.log('o', o);
+        console.log('e', e);
         var n;
         var c = {
             config: 'preVerifyJSAPI',
@@ -28,7 +30,7 @@
             for (var n in c) e[c[n]] = n;
             return e
         }());
-        var i = e.document;
+        var i = o.document;
         var t = i.title;
         var r = navigator.userAgent.toLowerCase();
         var s = navigator.platform.toLowerCase();
@@ -103,7 +105,11 @@
                 }, w.on = function (e, n) {
                     o.WeixinJSBridge && WeixinJSBridge.on(e, n)
                 })
-            }, ready: function (e) {
+            },
+            signurl: function() {
+                return h.url
+            },
+            ready: function (e) {
                 y.state != 0 ? e() : (S._completes.push(e), !l && v.debug && e())
             }, error: function (e) {
                 m < '6.0.2' || (y.state == -1 ? e(y.data) : S._fail = e)
